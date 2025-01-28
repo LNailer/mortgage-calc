@@ -25,20 +25,25 @@
 
     <form action="">
       <div class="field-label">Mortgage Amount</div>
-      <input type="number" class="amount">
+      <div class="amount-field">
+        <div class="dollar-sign">$</div>
+        <input type="number" class="amount-input-field">
+      </div>
+      
       <div class="field-label">Mortgage Term</div>
-      <input type="number" class="term">
-      <div class="field-label">Interest Rate</div>
-      <input type="number" class="rate">
+      <div class="term-field">
+        <input type="number" class="term-input">
+        <div class="term-span">years</div>
+      </div>
+
       <div class="field-label">Mortgage Type</div>
       <div class="fancy-radio"></div>
       <div>Repayment</div>
       <div>Interest Only</div>
       <button class="calculate">Calculate Repayments</button>
     </form>
+  <div>  
 </div>
-
-<hr> <!-- Temp - get rid of this later -->
   <!-- Empty results start -->
 <div class="results-before">
   <img src="./assets/images/illustration-empty.svg" alt="calculator illustration">

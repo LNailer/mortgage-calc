@@ -35,6 +35,14 @@ body {
   color: var(--slate-900);
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  }
+  input[type=number] {
+  -moz-appearance: textfield;
+} 
+
 .wrapper {
   max-width: 375px;
   margin: 0 auto;
@@ -43,20 +51,98 @@ body {
   border-radius: 12px;
 }
 .calculator {
-  padding: 1rem;
+  padding: 1rem 1.3rem;
+  color: var(--slate-500);
 }
 h1 {
   padding: 0;
   margin-top: 0.5rem;
+  color: var(--slate-900);
 }
 .reset-block {
   margin-top: -1rem;
   margin-bottom: 2rem;
 }
 .reset-btn {
+  color: var(--slate-500);
+  border-bottom: 1.5px solid var(--slate-500);
+}
+form {
+  padding-right: .5rem;
+}
+form > .field-label {
+  margin-top: 1.2rem;
+  margin-bottom: .6rem;
+}
+.amount-field {
+  border: 1.5px solid var(--slate-500);
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.dollar-sign,
+.amount-input-field {
+  padding: .6rem .8rem;
+  font-weight: 700;
+}
+.dollar-sign {
+  background: var(--slate-100);
+  z-index: -1;
+  font-weight: 700;
   color: var(--slate-700);
-  border-bottom: 1.5px solid var(--slate-700);
+}
 
+.term-field {
+  border: 1.5px solid var(--slate-500);
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.term-input, 
+.term-span {
+  padding: .6rem .8rem;
+  font-weight: 700;
+}
+.term-span {
+  background: var(--slate-100);
+  z-index: -1;
+  font-weight: 700;
+  color: var(--slate-700);
+}
+input {
+  border: none;
+  padding-right: 1rem;
+  margin: 0 .6rem;
+  font-family: var(--ff-base);
+  color: var(--slate-700);
+  font-size: 1rem;
+  
+}
+input:focus {
+  outline: none;
+  
+}
+/*
+.dollar-sign::before {
+  content: "$";
+  font-size: var(--fw-bold);
+  color: var(--slate-500);
+  margin: -1rem;
+} */
+.input-field {
+  margin-top: .6rem;
+  padding: .8rem 0;
+  border: 1.5px solid var(--slate-500);
+  border-radius: 7px;
+  width: 100%;
+}
+form > input {
+  margin-top: .6rem;
+  padding: .8rem 0;
+  border: 1.5px solid var(--slate-500);
+  border-radius: 7px;
+  width: 100%;
+  
 }
 
 .results-before, 
