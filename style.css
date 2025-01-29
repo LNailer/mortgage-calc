@@ -99,7 +99,7 @@ form > .field-label {
   border: 1.5px solid var(--slate-500);
   border-radius: 4px;
   display: grid;
-  grid-template-columns: 250px 74px;
+  grid-template-columns: 250px 72px;
 }
 .term-input{
   padding: .6rem .4rem;
