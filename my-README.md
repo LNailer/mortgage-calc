@@ -55,3 +55,15 @@ but
 text breaks on firefox, but fine elsewhere. - will also need fixing.
 I checked, and it isn't to do with
 overriding the number input arrows.
+
+===
+
+29/01/2025 - (Wednesday) 8:58 pm
+https://codepen.io/LNailer/pen/ByBMwPp?editors=1100
+Have an issue where my mortgage term field looks ok
+in all browsers but breaks on my mob.
+On the above codepen i managed to make a simple
+styled field in the style I'm going for that looks ok
+without the bg colour poking out.
+That codepen looks good on mob too.
+I'll try that simpler styling out next on my buttons and see if I can clean up the css a bit.
