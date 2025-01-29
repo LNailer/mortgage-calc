@@ -41,7 +41,7 @@ input[type=number]::-webkit-inner-spin-button,
   }
   input[type=number] {
   -moz-appearance: textfield;
-} 
+}
 
 .wrapper {
   max-width: 375px;
@@ -76,13 +76,16 @@ form > .field-label {
 }
 .amount-field {
   border: 1.5px solid var(--slate-500);
-  border-radius: 6px;
+  border-radius: 4px;
   display: grid;
   grid-template-columns: auto 1fr;
 }
-.dollar-sign,
-.amount-input-field {
+.dollar-sign{
   padding: .6rem .8rem;
+  font-weight: 700;
+}
+.amount-input-field {
+  padding: .6rem .4rem;
   font-weight: 700;
 }
 .dollar-sign {
@@ -94,13 +97,16 @@ form > .field-label {
 
 .term-field {
   border: 1.5px solid var(--slate-500);
-  border-radius: 6px;
+  border-radius: 4px;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 250px 74px;
 }
-.term-input, 
+.term-input{
+  padding: .6rem .4rem;
+  font-weight: 700;
+} 
 .term-span {
-  padding: .6rem .8rem;
+  padding: .6rem .9rem;
   font-weight: 700;
 }
 .term-span {
