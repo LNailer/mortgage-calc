@@ -99,7 +99,7 @@ form > .field-label {
   border: 1.3px solid var(--slate-500);
   border-radius: 4px;
   display: grid;
-  grid-template-columns: 250px 73px;
+  grid-template-columns: 1fr auto;
 }
 .term-input{
   padding: .6rem .4rem;
@@ -117,7 +117,7 @@ form > .field-label {
   border: 1.3px solid var(--slate-500);
   border-radius: 4px;
   display: grid;
-  grid-template-columns: 275px 48px;
+  grid-template-columns: 1fr auto;
 }
 .rate-input {
   padding: .6rem .4rem;
@@ -155,13 +155,28 @@ input:focus {
 
 /* calculate button bit */
 .calculate-btn {
-  padding: .6rem 1.2rem;
+  margin-top: 1.2rem;
+  width: 100%;
+  padding: .6rem 2rem;
   margin-bottom: 1rem;
   border: none;
   border-radius: 1.2rem;
   background-color: var(--main-lime-colour);
   color: var(--slate-900);
   font-weight: 900;
+  display: grid;
+  grid-template-columns: .5fr auto auto auto;
+  align-items: center;
+}
+.calc-icon {
+  max-height: 1.1rem;
+  position: relative;
+  top: 0px;
+  justify-self: end;
+  padding-right: .5rem;
+}
+.calc-label {
+  justify-self: start;
 }
 
 /*

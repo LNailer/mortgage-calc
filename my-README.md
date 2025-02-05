@@ -72,3 +72,14 @@ I'll try that simpler styling out next on my buttons and see if I can clean up t
 05/02/2025 - (Wednesday) 8:20 pm
 have had a go at fixing my radio buttons.
 They look alright. Starting on calculate button now.
+
+
+===
+06/02/2025 - (Thursday) 8:03 am
+Have got calc button looking good in it's base state.
+Noticed I now need to either *increase* the result img
+that sits below the form to match the design, or
+I think better - 
+>> reduce the form width slightly to give it ≈1rem
+padding on either side to sit more narrow than the image
+below.
