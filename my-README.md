@@ -67,3 +67,8 @@ styled field in the style I'm going for that looks ok
 without the bg colour poking out.
 That codepen looks good on mob too.
 I'll try that simpler styling out next on my buttons and see if I can clean up the css a bit.
+
+===
+05/02/2025 - (Wednesday) 8:20 pm
+have had a go at fixing my radio buttons.
+They look alright. Starting on calculate button now.

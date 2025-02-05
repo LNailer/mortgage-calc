@@ -37,16 +37,23 @@
       </div>
       
       <div class="field-label">Interest Rate</div>
-      <div class="rate-field">
+      <div class="rate-field-wrapper">
         <input type="number" class="rate-input">
         <div class="percent-span">%</div>
       </div>
 
       <div class="field-label">Mortgage Type</div>
-      <div class="fancy-radio"></div>
-      <div>Repayment</div>
-      <div>Interest Only</div>
-      <button class="calculate">Calculate Repayments</button>
+      <div class="radio-type">
+        <input type="radio" id="repayment" name="mortgage-type" value="repayment" checked />
+        <label for="repayment">Repayment</label>
+      </div>
+    
+      <div class="radio-type">
+        <input type="radio" id="interest-only" name="mortgage-type" value="interest-only" />
+        <label for="interest-only">Interest Only</label>
+      </div>
+
+      <button class="calculate-btn">Calculate Repayments</button>
     </form>
   <div>  
 </div>

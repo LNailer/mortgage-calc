@@ -75,7 +75,7 @@ form > .field-label {
   margin-bottom: .6rem;
 }
 .amount-field {
-  border: 1.5px solid var(--slate-500);
+  border: 1.3px solid var(--slate-500);
   border-radius: 4px;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -96,25 +96,41 @@ form > .field-label {
 }
 
 .term-field {
-  border: 1.5px solid var(--slate-500);
+  border: 1.3px solid var(--slate-500);
   border-radius: 4px;
   display: grid;
-  grid-template-columns: 250px 72px;
+  grid-template-columns: 250px 73px;
 }
 .term-input{
   padding: .6rem .4rem;
   font-weight: 700;
 } 
+
 .term-span {
   padding: .6rem .9rem;
-  font-weight: 700;
-}
-.term-span {
   background: var(--slate-100);
   z-index: -1;
   font-weight: 700;
   color: var(--slate-700);
 }
+.rate-field-wrapper {
+  border: 1.3px solid var(--slate-500);
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 275px 48px;
+}
+.rate-input {
+  padding: .6rem .4rem;
+  font-weight: 700;
+}
+.percent-span {
+  padding: .6rem .9rem;
+  background: var(--slate-100);
+  z-index: -1;
+  font-weight: 700;
+  color: var(--slate-700);
+}
+
 input {
   border: none;
   padding-right: 1rem;
@@ -125,9 +141,29 @@ input {
   
 }
 input:focus {
-  outline: none;
-  
+  outline: none;  
 }
+
+/* radio buttons bit */
+.radio-type {
+  border: 1.3px solid var(--slate-500);
+  border-radius: 4px;
+  padding: .5rem .2rem;
+  margin-bottom: .45rem;
+  color: var(--slate-900);
+}
+
+/* calculate button bit */
+.calculate-btn {
+  padding: .6rem 1.2rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 1.2rem;
+  background-color: var(--main-lime-colour);
+  color: var(--slate-900);
+  font-weight: 900;
+}
+
 /*
 .dollar-sign::before {
   content: "$";
