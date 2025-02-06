@@ -42,13 +42,21 @@ input[type=number]::-webkit-inner-spin-button,
   input[type=number] {
   -moz-appearance: textfield;
 }
-
+.shadow-wrap {
+  /*
+  margin: 0 auto;
+  max-width: 375;
+  border: 5px solid teal;
+  box-shadow: 5px 10px #888888;
+  */
+}
 .wrapper {
+  box-shadow: 0px 10px 40px 3px rgba(0, 0, 0, .5);
   max-width: 375px;
   margin: 0 auto;
   align-content: center;
-  border: 2px teal dotted;
-  border-radius: 12px;
+  border-radius: 4px;
+  margin-bottom: 1.8rem;
 }
 .calculator {
   padding: 1rem 1.3rem;
@@ -158,7 +166,7 @@ input:focus {
   margin-top: 1.2rem;
   width: 100%;
   padding: .6rem 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: .6rem;
   border: none;
   border-radius: 1.2rem;
   background-color: var(--main-lime-colour);
@@ -179,13 +187,26 @@ input:focus {
   justify-self: start;
 }
 
-/*
-.dollar-sign::before {
-  content: "$";
-  font-size: var(--fw-bold);
-  color: var(--slate-500);
-  margin: -1rem;
-} */
+/* Results section before data input */
+.results-before {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+}
+.calc-img {
+  margin-top: 1rem;
+}
+.results-header {
+  margin-top: 1rem;
+  margin-bottom: 0.8;
+}.pre-result-blurb {
+  color: var(--slate-300);
+  margin-top: 0;
+  line-height: 1.6;
+}
+
+
 .input-field {
   margin-top: .6rem;
   padding: .8rem 0;

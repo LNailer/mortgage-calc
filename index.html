@@ -16,6 +16,7 @@
   </style>
 </head>
 <body>
+  <div class="shadow-wrap">
   <div class="wrapper">
   <div class="calculator">
     <h1>Mortgage Calculator</h1>
@@ -57,20 +58,20 @@
     </form>
   <div>  
 </div>
-  <!-- Empty results start -->
+
+</div>
+<div class="result-wrapper">
+    <!-- Empty results start -->
 <div class="results-before">
-  <img src="./assets/images/illustration-empty.svg" alt="calculator illustration">
+  <img src="./assets/images/illustration-empty.svg" alt="calculator illustration" class="calc-img">
   <div class="before-text">
 
-  </div>
-  <h2>Results shown here</h2>
-  <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+    <h2 class="results-header">Results shown here</h2>
+    <p class="pre-result-blurb">Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
 
-  
-
+</div>
   <!-- Empty results end -->
 </div>
-<hr> <!-- Temp - get rid of this later -->
   <!-- Completed results start -->
 <div class="results-after" hidden>
   <h2>Your results</h2>
@@ -90,10 +91,12 @@
 </div>
   <!-- Completed results end -->
   
-  <div class="attribution" hidden>
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
+</div>
+<div class="attribution" hidden>
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+  Coded by <a href="#">Your Name Here</a>.
+</div>
 </div>
 </body>
 </html>
