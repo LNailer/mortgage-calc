@@ -69,12 +69,74 @@ h1 {
 }
 .reset-block {
   margin-top: -1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .reset-btn {
   color: var(--slate-500);
   border-bottom: 1.5px solid var(--slate-500);
 }
+
+/* Form layout */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: normal;
+  color: var(--slate-400);
+}
+
+/* Input container */
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1.3px solid var(--slate-500);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+.input-container:hover {
+  border: 1.3px solid hsl(200, 24%, 40%);
+}
+/* Input field */
+input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  padding-left: 1px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Prefix & Suffix */
+.prefix, .suffix {
+  background: var(--slate-100);
+  padding: 10px 15px;
+  font-weight: bold;
+  color: var(--slate-700);
+  white-space: nowrap;
+}
+/* Focus Effect */
+.input-container:focus-within {
+  border-color: var(--main-lime-colour); 
+}
+
+.input-container:focus-within .prefix,
+.input-container:focus-within .suffix {
+  background: var(--main-lime-colour); 
+  color: var(--slate-900); 
+}
+.error-msg {
+  margin-top: 0.5rem;
+  margin-left: 0rem;
+  color: var(--error-red);
+  margin-bottom: 0rem;
+}
+
+
 form {
   padding-right: .5rem;
 }
@@ -82,21 +144,34 @@ form > .field-label {
   margin-top: 1.2rem;
   margin-bottom: .6rem;
 }
+
+.field-side-left {
+  position: absolute;
+  top: 2px;
+}
 .amount-field {
   border: 1.3px solid var(--slate-500);
   border-radius: 4px;
   display: grid;
   grid-template-columns: auto 1fr;
 }
-.dollar-sign{
-  padding: .6rem .8rem;
-  font-weight: 700;
+.amount-field:focus-within {
+  border: 1.3px solid var(--main-lime-colour);
+  background: var(--main-lime-colour);
 }
+.amount-field:hover {
+  border: 1.3px solid var(--slate-900);
+}
+
 .amount-input-field {
   padding: .6rem .4rem;
   font-weight: 700;
 }
+.amount-input-field:hover {
+  cursor: pointer;
+}
 .dollar-sign {
+  padding: .6rem .8rem;
   background: var(--slate-100);
   z-index: -1;
   font-weight: 700;
@@ -109,9 +184,15 @@ form > .field-label {
   display: grid;
   grid-template-columns: 1fr auto;
 }
+.term-field:hover {
+  border: 1.3px solid var(--slate-900);
+}
 .term-input{
   padding: .6rem .4rem;
   font-weight: 700;
+} 
+.term-input:hover{
+  cursor: pointer;
 } 
 
 .term-span {
@@ -127,9 +208,15 @@ form > .field-label {
   display: grid;
   grid-template-columns: 1fr auto;
 }
+.rate-field-wrapper:hover {
+  border: 1.3px solid var(--slate-900);
+}
 .rate-input {
   padding: .6rem .4rem;
   font-weight: 700;
+}
+.rate-input:hover {
+  cursor: pointer;
 }
 .percent-span {
   padding: .6rem .9rem;
@@ -160,6 +247,14 @@ input:focus {
   margin-bottom: .45rem;
   color: var(--slate-900);
 }
+.radio-type:hover {
+  border: 1.3px solid var(--main-lime-colour);
+}
+#repayment:hover,
+#interest-only:hover,
+.radio-label:hover {
+  cursor: pointer;
+}
 
 /* calculate button bit */
 .calculate-btn {
@@ -175,6 +270,10 @@ input:focus {
   display: grid;
   grid-template-columns: .5fr auto auto auto;
   align-items: center;
+}
+.calculate-btn:hover {
+  background-color: hsl(61, 70%, 76%);
+  cursor: pointer;
 }
 .calc-icon {
   max-height: 1.1rem;
